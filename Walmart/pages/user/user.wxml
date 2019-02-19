@@ -1,0 +1,58 @@
+  <view class="avatar">
+    <view class='userinfo'>
+          <image src="../../assets/images/user02.png"></image>
+          <view class='userinfo_right'>
+               <view class="userinfo_nickname">zhangsan</view>
+               
+               <view class="userinfo_phone">账户余额：<span class="price">0元</span></view>
+          </view> 
+    </view>
+  </view>
+
+
+<view class='cells'>
+
+
+  <view class="block">
+
+      <view class='item'>
+            <image src="../../assets/images/user/money.png"></image>
+            <view class='item_right'>
+               <text class="desc">我的钱包</text>
+            </view>            
+      </view>
+
+  </view>
+
+
+   <view class="block">
+
+      <view class='item' wx:for="{{items}}" data-url="{{item.url}}" bindtap='goPage'>
+            <image src="{{item.img}}"></image>
+            <view class='item_right'>
+               <text class="desc">{{item.desc}}</text>
+            </view>            
+      </view>
+
+
+  </view>
+
+
+
+   <view class="block">
+
+      <view class='item'>
+              <image src="../../assets/images/user/feedback.png"></image>
+
+                 <view class='item_right'>
+                      <text class="desc">意见反馈</text> 
+                </view>     
+         
+      </view>
+
+       
+
+  </view>
+
+
+</view>

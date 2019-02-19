@@ -1,0 +1,89 @@
+/* pages/shoporder/shoporder.wxss */
+
+
+.shop_roder{
+  background: #fff;
+  margin-bottom: 80rpx;
+
+}
+
+.order_item{
+  padding: 20rpx;
+  border-bottom: 1px solid #eee;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+/*商铺*/
+
+.shop_roder .shop .type{
+
+  background: red;
+  padding:0rpx 20rpx;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10rpx;
+  height: 54rpx;
+  line-height: 54rpx;
+  margin:10rpx 0rpx 0rpx 20rpx;
+}
+
+.shop_roder .shop .status{
+  float: right;
+  color: #F5BA47;
+}
+.shop_roder .shop image{
+   width: 40rpx;
+   height: 40rpx;
+}
+
+/*商品*/
+.products{
+  height: 160rpx;
+
+}
+
+.products .price{
+  margin-left: 10px;
+}
+
+/*订单详情*/
+
+.order_detail{
+
+
+}
+
+.order_detail .price{
+
+  font-size: 40rpx;
+  font-weight: bold;
+}
+
+.order_button{
+  float: right;
+  width: 200rpx;
+  height: 68rpx;
+  line-height: 68rpx;
+  background: #F5BA47;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #fff;
+}
+
+.green{
+  color: green;
+}
+
+.red{
+  color:red;
+}
+
+
+.order_info{
+    padding: 20rpx;
+    border-bottom: 1px solid #eee;
+}
+.order_info view{
+  height: 80rpx;
+  line-height: 80rpx;
+}

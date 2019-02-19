@@ -1,0 +1,53 @@
+<!--pages/success/success.wxml-->
+<view class='face'>
+  <image src='../../assets/images/face.png'></image>
+
+  <view class='success'>
+    支付成功
+  </view>
+
+   
+</view>
+
+<view class='btn' bindtap='goHome'>
+      返回首页
+</view>
+
+<view class='p_header'>
+       你可能喜欢
+</view>
+
+<view class='list'>
+      
+            <view class='item'>
+                <image class='item_img' src='../../assets/images/00.png'></image>
+                <text class='item_text'>海南现摘芒果</text>
+                <view class='price'>¥29.9</view>
+                <view class='info'>
+
+                  <view class='info_text'>
+                    销量:201件
+                  </view>
+                  <button size="mini" class='info_button'>
+                    立即购买
+                  </button>
+                </view>
+              </view>
+
+
+              <view class='item'>
+                <image class='item_img' src='../../assets/images/00.png'></image>
+                <text class='item_text'>海南现摘芒果</text>
+                <view class='price'>¥29.9</view>
+                <view class='info'>
+
+                  <view class='info_text'>
+                    销量:201件
+                  </view>
+                  <button size="mini" class='info_button'>
+                    立即购买
+                  </button>
+                </view>
+              </view>
+
+       </view>

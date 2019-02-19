@@ -1,0 +1,49 @@
+
+<view  wx:if="{{hasData}}">
+
+  <view class="cart-box">
+      <view class="cart-list" wx:for="{{cartList}}">
+          
+          <view class="cart-pro-name">{{item.title}}</view>
+          <view class="cart-pro-attr">{{item.description}}</view>
+          <view class="price">￥{{item.price}}</view>
+          <view class="cart-count-box">
+              <view class="cart-count-down" bindtap='decCart' data-id="{{index}}">-</view>
+              <view class="cart-count-num">{{item.num}}</view>
+              <view class="cart-count-add" bindtap='incCart' data-id="{{index}}">+</view>
+          </view>
+          
+      </view>
+      
+  </view>
+
+
+
+  <view class="cart-footer">
+      
+        <view class="cart-toatl-price">总计： <text class='price'>￥{{totalPrice}}</text>
+        </view>
+
+        <view class='cart-footer-button'>
+            <view class='add'  bindtap='doQcode'>
+                继续添加
+            </view>
+            <view class='pay' bindtap='goOrder'>
+              去结算（{{totalNum}}）
+            </view>
+
+        </view>
+  </view>
+
+
+</view>
+
+  <view wx:else>
+      <view class='cart-empty'>
+          <view class="cart-no-data">购物车是空的哦~</view>
+
+          <image src='../../assets/images/cart.png'></image>
+          <view class='button' bindtap='doQcode'>扫一扫条形码 </view>
+      </view>
+
+  </view>

@@ -1,0 +1,32 @@
+/*模块*/
+/*
+d是一个时间戳  1500000000000
+
+转化成 2018/5/24 
+
+*/
+var formatDate = function (oTime) {
+  //  console.log(oTime)
+
+  // var date = new Date(date);    在wxs里面没法用
+   var d = date = getDate(parseFloat(oTime));
+
+   var year = date.getFullYear()
+   var month = date.getMonth() + 1
+   var day = date.getDate()
+   var hour = date.getHours()
+   var minute = date.getMinutes()
+   var second = date.getSeconds()
+
+   return [year, month, day].map(formatNumber).join('-') + ' ' + [hour, minute, second].map(formatNumber).join(':')
+
+}
+
+
+var formatNumber = function(n) {
+  n = n.toString()
+  return n[1] ? n : '0' + n
+}
+module.exports = {
+  formatDate: formatDate
+};

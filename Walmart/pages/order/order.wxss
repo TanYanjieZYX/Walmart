@@ -1,0 +1,141 @@
+/* pages/order/order.wxss */
+
+.block{
+
+  background:#fff;
+  padding:20rpx;
+  margin-bottom:20rpx;
+
+}
+
+.p_order_info{
+
+  height: 160rpx;
+  padding-bottom: 10rpx;
+  border-bottom:1rpx solid #eee;
+}
+
+.p_order_info .p_info{
+  height: 80rpx;
+  display: flex;
+  padding-top:20rpx;
+  width: 100%;
+}
+.p_order_info .p_info .p_title{
+  flex: 1;
+}
+
+
+
+
+
+.p_order_info .p_count{
+  height: 80rpx;
+  float: right;
+}
+
+
+
+/*更多*/
+
+.p_count_info{
+   height: 88rpx;
+   line-height: 88rpx;
+   text-align: center;
+}
+
+.show_more:after{
+  content: "";
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+
+  margin-left: 20rpx;
+  transform: rotate(-45deg);
+  position: relative;
+  top:-8rpx;
+}
+
+.hide_more:after{
+  content: "";
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  border-left: 1px solid #999;
+  border-bottom: 1px solid #999;
+  margin-left: 20rpx;
+  transform: rotate(135deg);
+  position: relative;
+  bottom:-4px;
+}
+
+
+/*余额*/
+
+.order_item{
+
+  display: flex;
+
+  height: 88rpx;
+  line-height: 88rpx;
+}
+
+.order_item .text{
+  flex: 1;
+}
+
+
+/*警告*/
+
+
+.warn_info{
+  text-align: center;
+
+  padding-top:80rpx;
+
+}
+
+.warn_info icon{
+  position: relative;
+  top:10rpx;
+  margin-right: 10rpx;
+}
+
+/*底部*/
+
+
+
+
+/*底部*/
+
+
+
+.order_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100rpx;
+    background: #fff;
+    border-top:1px solid #eee;
+    color: #666;
+    display: flex;
+}
+
+
+.total_price{
+  flex: 2;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-left: 10rpx;
+}
+.pay{
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #FFA72B;
+  text-align: center;
+  color: #fff;
+}

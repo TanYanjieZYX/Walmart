@@ -1,0 +1,37 @@
+ /**index.wxss**/
+
+
+.qcode_outer{
+  width:320rpx;
+  height:320rpx;
+  border-radius:160rpx;
+  background:#FCE9BC;
+  margin:60rpx auto 0px auto;
+  overflow:hidden;
+}
+
+.qcode_inner {
+  width: 280rpx;
+  height:280rpx;
+  border-radius:140rpx;
+  background:#F5BA47;
+  margin:20rpx auto 0px auto;
+  overflow:hidden;
+  color:#fff;
+}
+
+.qcode_inner image{
+
+  height:140rpx;
+  width:140rpx;
+  margin:30rpx auto 10rpx auto;
+  display:block;
+
+}
+.qcode_inner text{
+  width:180rpx;
+  text-align:center;
+  margin:0rpx auto;
+  display:block;
+
+}

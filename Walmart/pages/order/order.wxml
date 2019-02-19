@@ -1,0 +1,61 @@
+ <view class='block'>      
+      <view style="height:{{elementHeight}}rpx;overflow:hidden;">
+          <view class='p_order_info' wx:for="{{cartList}}">
+            <view class='p_info'>
+                <text class='p_title'>{{item.title}}</text>
+                <text class='price'>￥{{item.price}}</text>
+            </view>
+            <view class='p_count'>
+              X{{item.num}}
+            </view>
+          </view>
+            
+      </view>
+      <view class='p_count_info' bindtap='showMore'>
+          <view class='show_more' wx:if="{{!isShowMore}}">共{{totalNum}}件商品 展开</view>
+          <view class='hide_more'  wx:if="{{isShowMore}}">共{{totalNum}}件商品 收起</view>
+      </view>
+  </view>
+
+
+
+
+<view class='block order_item'>
+    <view class='text'>
+      余额 <text class='price'>（￥ 0）</text>
+    </view>
+    <switch color="#FFA72B" checked />
+
+</view>
+
+<view class='block order_item'>
+      <view class='text'>
+        商品金额
+      </view>
+      <text class='price'>¥0</text>
+  </view>
+  <view class='block order_item'>
+      <view class='text'>
+        余额减扣
+      </view>
+      <text class='price'>-¥0</text>
+  </view>
+
+    <view class='warn_info'>
+          <icon type="warn" size="20" color="#999"/>请支付完成后携带商品
+    </view>
+
+
+      <view class="order_footer">
+        <view class='total_price'>
+        
+           实际支付：<text class='price'>¥{{totalPrice}}</text>
+        
+        </view>
+
+        <view class='pay' bindtap='doPay'>        
+          确认支付        
+        </view>
+
+
+      </view>

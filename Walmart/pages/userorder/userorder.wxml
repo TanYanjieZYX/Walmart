@@ -1,0 +1,43 @@
+
+<wxs src="../../wxs/utils.wxs" module="utils" />
+
+
+<view class='container'  wx:if="{hasData>0}}" >
+
+  <view class='shop_roder' wx:for="{{list}}" wx:for-item="order">
+
+    <view class='shop order_item'>
+      <image src='../../assets/images/user/address.png'></image>
+      <text>it营</text>   
+      <span wx:if="{{order.pay_status==1}}" class="green">成功</span>
+      <span wx:if="{{order.pay_status==0}}" class="blue">失败</span>
+    </view>
+
+    <view class='products order_item' wx:for="{{order.items}}">
+      <view class='shop'>
+        <view>{{item.product_title}}</view>
+        <view>x{{item.product_num}}        
+          <text class='price'>￥{{item.product_price}}</text>        
+        </view>
+      </view>
+      
+    </view>     
+    
+
+    <view class='order_time order_item'>
+      下单时间：{{utils.formatDate(order.add_time)}}
+    </view>
+
+    <view class='order_detail order_item'>
+    实际付款：<text class='price'>￥{{order.total_price}}元 </text>   <view class='order_button' data-orderid='{{order._id}}' bindtap='goOrderDetails'>订单详情</view>
+    </view>
+  </view>
+
+ 
+</view>
+<view wx:else>
+       <view class='order-empty'>
+            <view class="order-no-data">您还没有任何订单哦~</view>            
+       </view>
+
+ </view>

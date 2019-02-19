@@ -1,0 +1,150 @@
+.cart-box{
+
+  margin-bottom:100rpx;
+}
+
+.cart-list{
+  height:185rpx;
+  padding: 20rpx;
+  border-bottom:1rpx solid #e9e9e9;
+  position: relative;
+
+}
+
+.cart-list .cart-pro-name{
+
+  line-height: 1.8;
+}
+
+.cart-list  .cart-pro-attr{
+
+  line-height: 1.8;
+
+  color: #999;
+}
+
+.cart-count-box{
+
+  position: absolute;
+
+  right:10rpx;
+  bottom:20rpx;
+  width:300rpx;
+  height:70rpx;
+  display:flex;
+
+}
+.cart-list .cart-count-box text{
+    display: inline-block;
+    line-height: 70rpx;
+    text-align: center;
+}
+.cart-count-down,.cart-count-add{
+    font-size: 50rpx;
+    width: 70rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    border-radius:50%;
+    text-align: center;
+    border:1px solid #FFA72B;   
+    color: #FFA72B;
+}
+.cart-count-add{
+  background: #FFA72B;
+  color: #fff;
+}
+.cart-count-num{
+    width: 140rpx;
+     display: inline-block;
+     height: 70rpx;
+     line-height: 70rpx;
+     border-radius: 35rpx;
+     border:1px solid #FFA72B;
+     margin:0px 10rpx;
+     text-align: center;
+     flex: 1；
+}
+
+
+
+/* 底部 */
+
+
+
+
+.cart-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 188rpx;
+    background: #fff;
+    color: #666;
+}
+
+.cart-toatl-price{
+  height: 88rpx;
+  line-height: 88rpx;
+  border-top:1px solid #eee;
+  padding-left: 10px;
+}
+.cart-toatl-price .price{
+  color:red;
+}
+
+
+.cart-footer-button{
+  display: flex;
+  color: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 40rpx;
+}
+
+.cart-footer-button .add{
+  background: #FFA72B;
+  flex: 1;
+  text-align: center;
+}
+.cart-footer-button .pay{
+  flex: 1;
+  background: red;
+  text-align: center;
+}
+
+
+/*购物车为空*/
+
+.cart-no-data{
+    padding:40rpx 0;
+    color: #999;
+    text-align: center;
+}
+
+.cart-empty{
+
+  padding: 120rpx 20rpx;
+}
+
+
+.cart-empty image{
+
+  width: 256rpx;
+  height: 256rpx;
+  margin: 0 auto;
+  display: block;
+}
+
+.cart-empty .button{
+
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #FFBA00;  
+  margin: 80rpx auto;
+  text-align: center;
+  border-radius: 10rpx;
+
+
+
+}

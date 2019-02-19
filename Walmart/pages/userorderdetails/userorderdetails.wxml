@@ -1,0 +1,59 @@
+<view class='container'>
+  <view class='shop_roder'>
+
+    <view class='shop order_item'>
+      <image src='../../assets/images/user/address.png'></image>
+      <text>IT营官方店铺</text>
+    </view>
+
+    <view class='order_info'>
+     
+      <view> 订单状态：
+      
+          <span class="green">成功</span>
+
+          <!-- <span wx:if="{{order.pay_status==0}}" class="red">失败</span> -->
+      
+      </view>
+      <view>  支付方式：微信支付</view>
+      <view>  订单编号：x2142142121321</view>
+      <view>  下单时间： 2018-12-19 13:46</view>
+     
+    </view>
+
+
+
+    <view class='products order_item'>
+      <view class='shop'>
+        <view>农夫山泉500ml</view>
+        <view>x2        
+          <text class='price'>￥2</text>        
+        </view>
+      </view>
+      
+    </view>
+     <view class='products order_item'>
+      <view class='shop'>
+        <view>矿泉水</view>
+        <view>x2        
+          <text class='price'>￥2</text>        
+        </view>
+      </view>      
+    </view> 
+
+
+    <view class='order_info'>
+      <view>商品原价：<text class='price'>￥100</text></view>
+      <view>实际付款<text class='price'>￥90</text></view>
+      <view>余额扣减<text class='price'>￥10</text></view>
+          
+    </view>
+
+    <view class='order_detail order_item'>
+      实际付款：<text class='price'>￥90 </text>  
+    </view>
+
+  </view>
+
+ 
+</view>

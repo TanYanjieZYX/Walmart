@@ -1,0 +1,123 @@
+/* pages/success/success.wxss */
+.face{
+
+    text-align: center;
+
+
+    padding:80rpx;
+}
+
+.face image{
+  width: 96rpx;
+  height: 96rpx;
+}
+
+.btn{
+
+
+  width: 240rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #F5BA47;
+  text-align: center;
+  border-radius: 10rpx;
+  color: #fff;
+  margin:0px auto;
+
+
+}
+.hot{
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background: #fff;  
+  margin-top:80rpx;
+}
+
+/*列表*/
+
+
+
+.list .item{
+
+   padding:20rpx;
+   background: #fff;
+   margin-bottom: 20rpx;
+}
+
+.list .item .item_img{
+  height: 300rpx;
+  width: 100%;
+  padding:10rpx 0px;
+}
+
+.list .item  .item_text{
+  font-size: 36rpx;  
+  padding:10rpx 0px;
+  color:#666;
+}
+.list .item .price{
+    padding:10rpx 0px;
+    color:red;
+    font-size: 46rpx;   
+}
+
+.list .item .info{
+  width: 100%;
+  height: 60rpx;
+   
+}
+
+.list .item .info .info_text{
+  float: left;
+  display: block;
+  width:200rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+.list .item .info .info_button{
+  float: right;
+  color: #fff;
+  background: #FF5050;
+  border:none;
+}
+
+/*头部*/
+
+.p_header{
+
+  margin:40rpx 0rpx 0rpx 0rpx;
+  background: #fff;
+  font-size: 36rpx; 
+  text-align: center;
+  overflow: hidden;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1px solid #ddd;
+
+}
+.p_header:before{
+
+  content: "*";
+
+  padding-left: 10rpx;
+
+  color:red;
+  position: relative;
+  top:-2rpx;
+  
+}
+
+.p_header:after{
+
+  content: "*";
+
+  padding-left: 10rpx;
+
+  color:red;
+  position: relative;
+  top:-2rpx;
+  
+}
